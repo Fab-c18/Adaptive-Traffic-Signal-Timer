@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       
+        <title>ATST</title>
+        <style>
+            h1{
+                text-align: center;
+                font-size:45px;
+                color: #fafafa;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+            }
+            .row{
+                padding-left:65%;
+                padding-top: 25%;
+                margin-top: 25px;
+                color: limegreen;
+            }
+        </style>
+    </head>    
+    <body background="http://www.hdnicewallpapers.com/Walls/Big/3D/3D_Traffic_Signal_Wallpaper.jpg" style="background-size: 100% 205%;">
+    <div class="container">
+        <h1>Upload the Video</h1>
+        <div class="row">
+       
+        <form class="md-form" action='/vid' method="POST"  enctype=multipart/form-data>
+            <div class="file-field">
+              <div class="btn btn-primary btn-sm float-left">
+                <span>Choose file</span>
+                <input type="file" name=vidfile>
+                <input  type ="submit" value="Upload">
+              </div>
+              
+            </div>
+          </form>
+         
+        </div>
+    </div>
+</body>
+
+</html>
